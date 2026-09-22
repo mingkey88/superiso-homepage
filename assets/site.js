@@ -76,6 +76,62 @@
     }
   }
 
+  /* --- Scroll reveals ---------------------------------------------------- */
+  /* Selector list must stay in step with the one in site.css. */
+  var REVEAL = '.intro-strip,.section-header,.work-grid .project,.drawing-project,' +
+    '.studio-aside,.studio-main,.approach-intro,.steps,.contact-top,' +
+    '.page-head-row,.filters,.index-item,' +
+    '.project-title-block,.spec,.project-body,.shot,.next-project,' +
+    '.studio-portrait figure,.quote-band blockquote,.quote-band cite,' +
+    '.principle,.stat,.contact-methods,.contact-side';
+
+  var revealEls = Array.prototype.slice.call(document.querySelectorAll(REVEAL));
+  var revealEl = function (el, delay) {
+    if (delay) el.style.setProperty('--d', delay.toFixed(2) + 's');
+    el.classList.add('is-in');
+  };
+
+  if ('IntersectionObserver' in window) {
+    var waiting = new Set(revealEls);
+    var take = function (el, delay) {
+      if (!waiting.has(el)) return;
+      waiting.delete(el);
+      io.unobserve(el);
+      revealEl(el, delay);
+    };
+
+    var io = new IntersectionObserver(function (entries) {
+      // Elements crossing the threshold together are staggered as a batch, so a
+      // row of cards cascades while a lone element appears immediately.
+      var batch = entries.filter(function (en) { return en.isIntersecting; });
+      batch.forEach(function (en, i) { take(en.target, Math.min(i, 5) * 0.08); });
+    }, { rootMargin: '0px 0px -7% 0px', threshold: 0.1 });
+    revealEls.forEach(function (el) { io.observe(el); });
+
+    // A fast scrollbar drag or an End keypress can jump an element clean over
+    // the viewport, so it never intersects and would stay hidden for good.
+    // Sweep up anything already scrolled past and show it without animating.
+    var ticking = false;
+    var sweep = function () {
+      ticking = false;
+      if (!waiting.size) return;
+      waiting.forEach(function (el) {
+        if (el.getBoundingClientRect().bottom < 0) take(el, 0);
+      });
+    };
+    window.addEventListener('scroll', function () {
+      if (ticking || !waiting.size) return;
+      ticking = true;
+      requestAnimationFrame(sweep);
+    }, { passive: true });
+  } else {
+    revealEls.forEach(function (el) { revealEl(el, 0); });
+  }
+
+  // Tells the inline head script that reveals are running, so it leaves the
+  // arming class in place.
+  window.__revealsReady = true;
+
   /* --- Gallery lightbox -------------------------------------------------- */
   var gallery = document.querySelector('.gallery');
   var box = document.querySelector('.lightbox');
@@ -88,7 +144,7 @@
     var index = 0;
     var lastFocus = null;
 
-    var show = function (i) {
+    var showShot = function (i) {
       index = (i + shots.length) % shots.length;
       var source = shots[index].querySelector('img');
       // Prefer the largest rendition the <img> offers, falling back to its src.
@@ -112,7 +168,7 @@
 
     var open = function (i) {
       lastFocus = document.activeElement;
-      show(i);
+      showShot(i);
       box.hidden = false;
       document.body.style.overflow = 'hidden';
       box.querySelector('.lb-close').focus();
@@ -129,8 +185,8 @@
     });
 
     box.querySelector('.lb-close').addEventListener('click', close);
-    box.querySelector('.lb-prev').addEventListener('click', function () { show(index - 1); });
-    box.querySelector('.lb-next').addEventListener('click', function () { show(index + 1); });
+    box.querySelector('.lb-prev').addEventListener('click', function () { showShot(index - 1); });
+    box.querySelector('.lb-next').addEventListener('click', function () { showShot(index + 1); });
     box.addEventListener('click', function (e) {
       if (e.target === box) close();
     });
@@ -138,8 +194,8 @@
     document.addEventListener('keydown', function (e) {
       if (box.hidden) return;
       if (e.key === 'Escape') close();
-      else if (e.key === 'ArrowLeft') show(index - 1);
-      else if (e.key === 'ArrowRight') show(index + 1);
+      else if (e.key === 'ArrowLeft') showShot(index - 1);
+      else if (e.key === 'ArrowRight') showShot(index + 1);
       else if (e.key === 'Tab') {
         // Keep focus inside the lightbox while it is open.
         var focusable = box.querySelectorAll('button');

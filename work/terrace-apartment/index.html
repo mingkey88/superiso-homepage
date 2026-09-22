@@ -18,14 +18,26 @@
 <link rel="stylesheet" href="../../assets/site.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ArchitecturalService", "name": "Superiso Studio", "description": "Superiso Studio is an architecture and interior design practice in Singapore, shaping homes around the lives and stories they hold.", "email": "projects@superisostudio.com", "url": "https://mingkey88.github.io/superiso-homepage/", "image": "https://mingkey88.github.io/superiso-homepage/assets/img/resort-living/04-1400.webp", "areaServed": {"@type": "Country", "name": "Singapore"}, "address": {"@type": "PostalAddress", "addressLocality": "Singapore", "addressCountry": "SG"}, "sameAs": ["https://www.instagram.com/superiso_studio/"], "knowsAbout": ["Architecture", "Interior design", "Residential renovation"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Terrace Apartment", "description": "An apartment for a family who cook, and who like a full table.", "creator": {"@type": "Organization", "name": "Superiso Studio"}, "locationCreated": {"@type": "Place", "name": "Stevens, Singapore"}, "creativeWorkStatus": "Completed"}</script>
+<script>
+/* Arm scroll reveals before first paint so nothing flashes in. Content must
+   never be left invisible, so disarm again if site.js never runs, or if any
+   script error fires — a half-run script can otherwise strand hidden content. */
+(function(){
+  var d=document.documentElement;
+  d.classList.add('js-reveal');
+  var off=function(){d.classList.remove('js-reveal');};
+  window.addEventListener('error',off);
+  setTimeout(function(){if(!window.__revealsReady)off();},2500);
+})();
+</script>
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
 <a class="brand" href="../../" aria-label="Superiso Studio home"><img src="../../assets/logo.png" alt="" width="35" height="40">superiso studio</a>
-<nav class="desktop-nav" aria-label="Main navigation"><a href="../../work/" aria-current="page">Work</a><a href="../../studio/">Studio</a><a class="contact-link" href="../../contact/">Start a conversation <span aria-hidden="true">&#8599;</span></a></nav>
+<nav class="desktop-nav" aria-label="Main navigation"><a href="../../work/" aria-current="page">Work</a><a href="../../studio/">Studio</a><a class="contact-link" href="../../contact/">Start a conversation <span class="arw" aria-hidden="true">&#8599;</span></a></nav>
 <button class="mobile-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu <span aria-hidden="true">&#9776;</span></button>
-<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" inert><a href="../../work/" aria-current="page">Work</a><a href="../../studio/">Studio</a><a href="../../contact/">Start a conversation &#8599;</a></nav>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" inert><a href="../../work/" aria-current="page">Work</a><a href="../../studio/">Studio</a><a href="../../contact/">Start a conversation <span class="arw" aria-hidden="true">&#8599;</span></a></nav>
 </header>
 <main id="main">
 <div class="project-hero"><img src="../../assets/img/terrace-apartment/03-1600.webp" srcset="../../assets/img/terrace-apartment/03-800.webp 800w, ../../assets/img/terrace-apartment/03-1400.webp 1400w, ../../assets/img/terrace-apartment/03-1600.webp 1600w" sizes="100vw" alt="Roof terrace outdoor kitchen with a blue tiled splashback and a long dining table" width="1600" height="1453" fetchpriority="high"></div>
@@ -64,7 +76,7 @@
 <a href="../../work/">Work</a>
 <a href="../../studio/">Studio</a>
 <a href="../../contact/">Contact</a>
-<a href="https://www.instagram.com/superiso_studio/" target="_blank" rel="noopener">Instagram &#8599;</a>
+<a href="https://www.instagram.com/superiso_studio/" target="_blank" rel="noopener">Instagram <span class="arw" aria-hidden="true">&#8599;</span></a>
 <a href="#top">Back to top &#8593;</a>
 </div>
 </div>

@@ -16,6 +16,9 @@ TODAY = datetime.date.today().isoformat()
 
 e = lambda s: html.escape(str(s), quote=True)
 
+# Diagonal arrow marking a link that navigates; rotates to horizontal on hover.
+ARW = '<span class="arw" aria-hidden="true">&#8599;</span>'
+
 
 # --- image helpers ---------------------------------------------------------
 
@@ -77,6 +80,18 @@ def head(title, desc, rel, page_key, canonical, extra_ld=""):
 <link rel="icon" href="{rel}assets/logo.png">
 <link rel="stylesheet" href="{rel}assets/site.css">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>{extra_ld}
+<script>
+/* Arm scroll reveals before first paint so nothing flashes in. Content must
+   never be left invisible, so disarm again if site.js never runs, or if any
+   script error fires — a half-run script can otherwise strand hidden content. */
+(function(){{
+  var d=document.documentElement;
+  d.classList.add('js-reveal');
+  var off=function(){{d.classList.remove('js-reveal');}};
+  window.addEventListener('error',off);
+  setTimeout(function(){{if(!window.__revealsReady)off();}},2500);
+}})();
+</script>
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -91,10 +106,10 @@ def header(rel, page_key):
         return f'<a href="{rel}{href}"{cur}>{label}</a>'
     desk = "".join(link(k, l, h) for k, l, h in NAV)
     cur_c = ' aria-current="page"' if page_key == "contact" else ""
-    mob = desk + f'<a href="{rel}contact/"{cur_c}>Start a conversation &#8599;</a>'
+    mob = desk + f'<a href="{rel}contact/"{cur_c}>Start a conversation {ARW}</a>'
     return f"""<header class="site-header">
 <a class="brand" href="{rel or '#top'}" aria-label="{'Superiso Studio, back to top' if not rel else 'Superiso Studio home'}"><img src="{rel}assets/logo.png" alt="" width="35" height="40">superiso studio</a>
-<nav class="desktop-nav" aria-label="Main navigation">{desk}<a class="contact-link" href="{rel}contact/"{cur_c}>Start a conversation <span aria-hidden="true">&#8599;</span></a></nav>
+<nav class="desktop-nav" aria-label="Main navigation">{desk}<a class="contact-link" href="{rel}contact/"{cur_c}>Start a conversation {ARW}</a></nav>
 <button class="mobile-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu <span aria-hidden="true">&#9776;</span></button>
 <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" inert>{mob}</nav>
 </header>"""
@@ -109,7 +124,7 @@ def foot(rel):
 <a href="{rel}work/">Work</a>
 <a href="{rel}studio/">Studio</a>
 <a href="{rel}contact/">Contact</a>
-<a href="{e(SITE['instagram'])}" target="_blank" rel="noopener">Instagram &#8599;</a>
+<a href="{e(SITE['instagram'])}" target="_blank" rel="noopener">Instagram {ARW}</a>
 <a href="#top">Back to top &#8593;</a>
 </div>
 </div>
@@ -185,14 +200,14 @@ def build_home():
 <div class="intro-strip"><span>Architecture with a personal point of view</span><span>Considered spaces. Everyday possibilities.</span></div>
 
 <section class="section" id="work" aria-labelledby="work-title">
-<div class="section-header"><div><div class="eyebrow">01 / Selected work</div><h2 class="section-title" id="work-title">Places to live.<br>Stories to <em>unfold.</em></h2></div><a class="text-link" href="work/">View all projects <span aria-hidden="true">&#8599;</span></a></div>
+<div class="section-header"><div><div class="eyebrow">01 / Selected work</div><h2 class="section-title" id="work-title">Places to live.<br>Stories to <em>unfold.</em></h2></div><a class="text-link" href="work/">View all projects {ARW}</a></div>
 <div class="work-grid">{cards}</div>
 <article class="drawing-project">
 <a class="drawing-frame" href="work/{drawing['slug']}/" aria-label="View {e(drawing['title'])}">{img_at(drawing['slug'], '02.jpg', '(max-width:700px) 88vw, 46vw', rel)}</a>
 <div class="drawing-info"><div class="eyebrow">03 / From the drawing board</div><h3>{e(drawing['title'])}</h3>
 <p>{e(drawing['summary'])}</p>
 <p style="font-size:10px">{meta_line(drawing)}</p>
-<a class="text-link" href="work/{drawing['slug']}/">Explore the project <span aria-hidden="true">&#8599;</span></a></div>
+<a class="text-link" href="work/{drawing['slug']}/">Explore the project {ARW}</a></div>
 </article>
 </section>
 
@@ -203,7 +218,7 @@ def build_home():
 <div class="studio-main"><h2 id="studio-title">Good design starts<br>with a little<br><em>understanding.</em></h2>
 <p>Every person brings a different story. We listen, explore and design together, shaping spaces around the lives they hold.</p>
 <p>At Superiso Studio, our vision is to make sustainable design accessible, welcome play and emotion, and tread more lightly on the environment.</p>
-<a class="text-link" href="studio/">Meet the studio <span aria-hidden="true">&#8599;</span></a></div>
+<a class="text-link" href="studio/">Meet the studio {ARW}</a></div>
 </section>
 
 <section class="section approach" id="approach" aria-labelledby="approach-title">
@@ -215,7 +230,7 @@ def build_home():
 <section class="section contact" id="contact" aria-labelledby="contact-title">
 <div class="eyebrow">04 / Let's begin</div>
 <div class="contact-top"><div><h2 id="contact-title">What story will<br>your space <em>tell?</em></h2>
-<a class="mail" href="mailto:{e(SITE['email'])}">{e(SITE['email'])} <span aria-hidden="true">&#8599;</span></a></div>
+<a class="mail" href="mailto:{e(SITE['email'])}">{e(SITE['email'])} {ARW}</a></div>
 <p class="contact-annotation">A new home. A familiar place.<br>A possibility worth exploring.<br>Let's start a conversation.</p></div>
 </section>
 """
@@ -387,7 +402,7 @@ def build_studio():
 <section class="section contact">
 <div class="eyebrow">Let's begin</div>
 <div class="contact-top"><div><h2>What story will<br>your space <em>tell?</em></h2>
-<a class="mail" href="mailto:{e(SITE['email'])}">{e(SITE['email'])} <span aria-hidden="true">&#8599;</span></a></div>
+<a class="mail" href="mailto:{e(SITE['email'])}">{e(SITE['email'])} {ARW}</a></div>
 <p class="contact-annotation">A new home. A familiar place.<br>A possibility worth exploring.</p></div>
 </section>
 """
@@ -405,8 +420,8 @@ def build_contact():
 </div>
 <div class="contact-grid">
 <div class="contact-methods">
-<a href="mailto:{e(SITE['email'])}"><span class="what">Email</span><span class="val">{e(SITE['email'])} &#8599;</span></a>
-<a href="{e(SITE['instagram'])}" target="_blank" rel="noopener"><span class="what">Instagram</span><span class="val">{e(SITE['instagramHandle'])} &#8599;</span></a>
+<a href="mailto:{e(SITE['email'])}"><span class="what">Email</span><span class="val">{e(SITE['email'])} {ARW}</span></a>
+<a href="{e(SITE['instagram'])}" target="_blank" rel="noopener"><span class="what">Instagram</span><span class="val">{e(SITE['instagramHandle'])} {ARW}</span></a>
 <div><span class="what">Studio</span><span class="val">Singapore</span></div>
 </div>
 <div class="contact-side">
@@ -433,9 +448,9 @@ def build_404():
 </div>
 <div class="contact-grid">
 <div class="contact-methods">
-<a href="{rel}work/"><span class="what">Try</span><span class="val">Selected work &#8599;</span></a>
-<a href="{rel}studio/"><span class="what">Try</span><span class="val">The studio &#8599;</span></a>
-<a href="{rel}"><span class="what">Try</span><span class="val">Home &#8599;</span></a>
+<a href="{rel}work/"><span class="what">Try</span><span class="val">Selected work {ARW}</span></a>
+<a href="{rel}studio/"><span class="what">Try</span><span class="val">The studio {ARW}</span></a>
+<a href="{rel}"><span class="what">Try</span><span class="val">Home {ARW}</span></a>
 </div>
 <div class="contact-side"><p>That page doesn't exist — it may have moved. The work is all still here.</p></div>
 </div>

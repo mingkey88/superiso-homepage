@@ -64,6 +64,11 @@ em{font-family:var(--serif);font-style:italic}
 .section-title{font-size:clamp(38px,4.5vw,68px);line-height:1.06;letter-spacing:-.05em;margin:20px 0 0}
 .text-link{font-size:12px;padding:11px 0;border-bottom:1px solid;display:inline-flex;gap:35px;align-items:center}
 .text-link:hover{color:var(--olive)}
+
+/* A diagonal arrow means "this navigates". On hover it swings to horizontal,
+   turning the mark into a direction of travel. */
+.arw{display:inline-block;transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+a:hover .arw,a:focus-visible .arw{transform:rotate(45deg)}
 .section-header>.text-link{margin-top:60px}
 .round-link{display:flex;gap:15px;align-items:center;font-size:11px;white-space:nowrap}
 .circle-arrow{
@@ -93,7 +98,14 @@ em{font-family:var(--serif);font-style:italic}
 .hero-caption{position:absolute;bottom:30px;left:32px;right:32px;display:flex;justify-content:space-between;align-items:flex-end;color:#fff;z-index:1}
 .hero-caption small{font-size:9px;letter-spacing:1.2px;text-transform:uppercase;display:block;margin-bottom:8px}
 .hero-caption strong{font-size:18px;font-weight:400}
-.hero-caption .photo-link{border:1px solid rgba(255,255,255,.6);border-radius:50%;width:40px;height:40px;display:grid;place-items:center}
+.hero-caption .photo-link{
+  border:1px solid rgba(255,255,255,.6);border-radius:50%;width:40px;height:40px;
+  display:grid;place-items:center;
+  transition:transform .3s cubic-bezier(.2,.7,.2,1),background .25s,border-color .25s;
+}
+.hero-caption .photo-link:hover,.hero-caption .photo-link:focus-visible{
+  transform:rotate(45deg);background:rgba(255,255,255,.18);border-color:#fff;
+}
 
 /* --- Featured work grid (home) ------------------------------------------ */
 .work-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:55px}
@@ -109,7 +121,8 @@ em{font-family:var(--serif);font-style:italic}
 .project .number{font-size:10px;letter-spacing:1px;margin-top:6px}
 .project .image-cta{
   position:absolute;right:18px;bottom:18px;background:var(--paper);width:38px;height:38px;
-  border-radius:50%;display:grid;place-items:center;font-size:18px;transition:transform .2s;
+  border-radius:50%;display:grid;place-items:center;font-size:18px;
+  transition:transform .3s cubic-bezier(.2,.7,.2,1);
 }
 .project:hover .image-cta{transform:rotate(45deg)}
 .project-note{font-size:13px;line-height:1.7;color:var(--muted);margin:17px 0 0;max-width:370px}
@@ -188,7 +201,7 @@ em{font-family:var(--serif);font-style:italic}
 .filter-count{font-size:10px;color:var(--muted);margin-left:auto;letter-spacing:.5px}
 
 .index-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:70px 55px;padding:60px var(--pad) 120px}
-.index-item{min-width:0;animation:appear .5s both}
+.index-item{min-width:0}
 .index-item[hidden]{display:none}
 .index-item:nth-child(4n+2),.index-item:nth-child(4n+3){margin-top:70px}
 .index-item .frame{position:relative;overflow:hidden;background:var(--soft);aspect-ratio:4/3}
@@ -198,7 +211,8 @@ em{font-family:var(--serif);font-style:italic}
 .index-item.is-drawing .frame img{object-fit:contain;mix-blend-mode:multiply;padding:30px}
 .index-item .image-cta{
   position:absolute;right:18px;bottom:18px;background:var(--paper);width:38px;height:38px;
-  border-radius:50%;display:grid;place-items:center;font-size:18px;transition:transform .2s;
+  border-radius:50%;display:grid;place-items:center;font-size:18px;
+  transition:transform .3s cubic-bezier(.2,.7,.2,1);
 }
 .index-item:hover .image-cta{transform:rotate(45deg)}
 .index-item .caption{padding:20px 0 14px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px}
@@ -305,6 +319,23 @@ em{font-family:var(--serif);font-style:italic}
 .contact-methods .val{font-size:clamp(16px,2vw,26px);letter-spacing:-.4px;text-align:right}
 .contact-methods a:hover .val{color:var(--olive)}
 .contact-side p{font-size:14px;line-height:1.9;color:var(--muted);margin:0 0 22px}
+
+/* ==========================================================================
+   Scroll reveals
+   The hidden state applies only under .js-reveal, which the page arms before
+   first paint and removes again if site.js fails — so content is never
+   stranded invisible.
+   ========================================================================== */
+html.js-reveal :is(.intro-strip,.section-header,.work-grid .project,.drawing-project,.studio-aside,.studio-main,.approach-intro,.steps,.contact-top,.page-head-row,.filters,.index-item,.project-title-block,.spec,.project-body,.shot,.next-project,.studio-portrait figure,.quote-band blockquote,.quote-band cite,.principle,.stat,.contact-methods,.contact-side){
+  opacity:0;transform:translateY(22px);
+  transition:opacity .8s cubic-bezier(.22,.7,.25,1),transform .8s cubic-bezier(.22,.7,.25,1);
+  transition-delay:var(--d,0s);
+}
+html.js-reveal :is(.intro-strip,.section-header,.work-grid .project,.drawing-project,.studio-aside,.studio-main,.approach-intro,.steps,.contact-top,.page-head-row,.filters,.index-item,.project-title-block,.spec,.project-body,.shot,.next-project,.studio-portrait figure,.quote-band blockquote,.quote-band cite,.principle,.stat,.contact-methods,.contact-side).is-in{opacity:1;transform:none}
+
+@media(prefers-reduced-motion:reduce){
+  html.js-reveal :is(.intro-strip,.section-header,.work-grid .project,.drawing-project,.studio-aside,.studio-main,.approach-intro,.steps,.contact-top,.page-head-row,.filters,.index-item,.project-title-block,.spec,.project-body,.shot,.next-project,.studio-portrait figure,.quote-band blockquote,.quote-band cite,.principle,.stat,.contact-methods,.contact-side){opacity:1;transform:none}
+}
 
 /* ==========================================================================
    Responsive

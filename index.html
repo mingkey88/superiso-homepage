@@ -17,14 +17,26 @@
 <link rel="icon" href="assets/logo.png">
 <link rel="stylesheet" href="assets/site.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ArchitecturalService", "name": "Superiso Studio", "description": "Superiso Studio is an architecture and interior design practice in Singapore, shaping homes around the lives and stories they hold.", "email": "projects@superisostudio.com", "url": "https://mingkey88.github.io/superiso-homepage/", "image": "https://mingkey88.github.io/superiso-homepage/assets/img/resort-living/04-1400.webp", "areaServed": {"@type": "Country", "name": "Singapore"}, "address": {"@type": "PostalAddress", "addressLocality": "Singapore", "addressCountry": "SG"}, "sameAs": ["https://www.instagram.com/superiso_studio/"], "knowsAbout": ["Architecture", "Interior design", "Residential renovation"]}</script>
+<script>
+/* Arm scroll reveals before first paint so nothing flashes in. Content must
+   never be left invisible, so disarm again if site.js never runs, or if any
+   script error fires — a half-run script can otherwise strand hidden content. */
+(function(){
+  var d=document.documentElement;
+  d.classList.add('js-reveal');
+  var off=function(){d.classList.remove('js-reveal');};
+  window.addEventListener('error',off);
+  setTimeout(function(){if(!window.__revealsReady)off();},2500);
+})();
+</script>
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
 <a class="brand" href="#top" aria-label="Superiso Studio, back to top"><img src="assets/logo.png" alt="" width="35" height="40">superiso studio</a>
-<nav class="desktop-nav" aria-label="Main navigation"><a href="work/">Work</a><a href="studio/">Studio</a><a class="contact-link" href="contact/">Start a conversation <span aria-hidden="true">&#8599;</span></a></nav>
+<nav class="desktop-nav" aria-label="Main navigation"><a href="work/">Work</a><a href="studio/">Studio</a><a class="contact-link" href="contact/">Start a conversation <span class="arw" aria-hidden="true">&#8599;</span></a></nav>
 <button class="mobile-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu <span aria-hidden="true">&#9776;</span></button>
-<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" inert><a href="work/">Work</a><a href="studio/">Studio</a><a href="contact/">Start a conversation &#8599;</a></nav>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" inert><a href="work/">Work</a><a href="studio/">Studio</a><a href="contact/">Start a conversation <span class="arw" aria-hidden="true">&#8599;</span></a></nav>
 </header>
 <main id="main">
 <section class="hero" aria-labelledby="hero-title">
@@ -40,7 +52,7 @@
 <div class="intro-strip"><span>Architecture with a personal point of view</span><span>Considered spaces. Everyday possibilities.</span></div>
 
 <section class="section" id="work" aria-labelledby="work-title">
-<div class="section-header"><div><div class="eyebrow">01 / Selected work</div><h2 class="section-title" id="work-title">Places to live.<br>Stories to <em>unfold.</em></h2></div><a class="text-link" href="work/">View all projects <span aria-hidden="true">&#8599;</span></a></div>
+<div class="section-header"><div><div class="eyebrow">01 / Selected work</div><h2 class="section-title" id="work-title">Places to live.<br>Stories to <em>unfold.</em></h2></div><a class="text-link" href="work/">View all projects <span class="arw" aria-hidden="true">&#8599;</span></a></div>
 <div class="work-grid"><article class="project">
 <a href="work/resort-living/" aria-label="View Resort Living">
 <div class="frame"><img src="assets/img/resort-living/03-1537.webp" srcset="assets/img/resort-living/03-800.webp 800w, assets/img/resort-living/03-1400.webp 1400w, assets/img/resort-living/03-1537.webp 1537w" sizes="(max-width:700px) 88vw, 46vw" alt="Timber steps rising to an arched terrace, framed by a flowering frangipani tree" width="1537" height="1660" loading="lazy" decoding="async"><span class="image-cta" aria-hidden="true">&#8599;</span></div>
@@ -59,7 +71,7 @@
 <div class="drawing-info"><div class="eyebrow">03 / From the drawing board</div><h3>House on House</h3>
 <p>A new home built on top of an existing two-storey terrace, making room for a family to grow.</p>
 <p style="font-size:10px">Macpherson &middot; Architectural &middot; 260 m²</p>
-<a class="text-link" href="work/house-on-house/">Explore the project <span aria-hidden="true">&#8599;</span></a></div>
+<a class="text-link" href="work/house-on-house/">Explore the project <span class="arw" aria-hidden="true">&#8599;</span></a></div>
 </article>
 </section>
 
@@ -70,7 +82,7 @@
 <div class="studio-main"><h2 id="studio-title">Good design starts<br>with a little<br><em>understanding.</em></h2>
 <p>Every person brings a different story. We listen, explore and design together, shaping spaces around the lives they hold.</p>
 <p>At Superiso Studio, our vision is to make sustainable design accessible, welcome play and emotion, and tread more lightly on the environment.</p>
-<a class="text-link" href="studio/">Meet the studio <span aria-hidden="true">&#8599;</span></a></div>
+<a class="text-link" href="studio/">Meet the studio <span class="arw" aria-hidden="true">&#8599;</span></a></div>
 </section>
 
 <section class="section approach" id="approach" aria-labelledby="approach-title">
@@ -82,7 +94,7 @@
 <section class="section contact" id="contact" aria-labelledby="contact-title">
 <div class="eyebrow">04 / Let's begin</div>
 <div class="contact-top"><div><h2 id="contact-title">What story will<br>your space <em>tell?</em></h2>
-<a class="mail" href="mailto:projects@superisostudio.com">projects@superisostudio.com <span aria-hidden="true">&#8599;</span></a></div>
+<a class="mail" href="mailto:projects@superisostudio.com">projects@superisostudio.com <span class="arw" aria-hidden="true">&#8599;</span></a></div>
 <p class="contact-annotation">A new home. A familiar place.<br>A possibility worth exploring.<br>Let's start a conversation.</p></div>
 </section>
 </main>
@@ -93,7 +105,7 @@
 <a href="work/">Work</a>
 <a href="studio/">Studio</a>
 <a href="contact/">Contact</a>
-<a href="https://www.instagram.com/superiso_studio/" target="_blank" rel="noopener">Instagram &#8599;</a>
+<a href="https://www.instagram.com/superiso_studio/" target="_blank" rel="noopener">Instagram <span class="arw" aria-hidden="true">&#8599;</span></a>
 <a href="#top">Back to top &#8593;</a>
 </div>
 </div>
