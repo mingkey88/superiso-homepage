@@ -420,7 +420,11 @@ def build_contact():
 
 
 def build_404():
-    rel = ""
+    # A 404 is served under whatever path was requested, so every link and asset
+    # on this page must be absolute — relative ones would resolve against a
+    # directory that does not exist. `rel` is just a prefix, so the base URL
+    # slots straight in.
+    rel = SITE["baseUrl"].rstrip("/") + "/"
     out = head("Page not found — superiso studio", "That page could not be found.",
                rel, "", SITE["baseUrl"] + "/404.html")
     out += f"""<div class="contact-page">
