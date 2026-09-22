@@ -93,7 +93,7 @@ def header(rel, page_key):
     cur_c = ' aria-current="page"' if page_key == "contact" else ""
     mob = desk + f'<a href="{rel}contact/"{cur_c}>Start a conversation &#8599;</a>'
     return f"""<header class="site-header">
-<a class="brand" href="{rel}" aria-label="Superiso Studio home"><img src="{rel}assets/logo.png" alt="" width="35" height="40">superiso studio</a>
+<a class="brand" href="{rel or '#top'}" aria-label="{'Superiso Studio, back to top' if not rel else 'Superiso Studio home'}"><img src="{rel}assets/logo.png" alt="" width="35" height="40">superiso studio</a>
 <nav class="desktop-nav" aria-label="Main navigation">{desk}<a class="contact-link" href="{rel}contact/"{cur_c}>Start a conversation <span aria-hidden="true">&#8599;</span></a></nav>
 <button class="mobile-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu <span aria-hidden="true">&#9776;</span></button>
 <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" inert>{mob}</nav>
@@ -104,7 +104,7 @@ def foot(rel):
     return f"""</main>
 <footer class="footer">
 <div class="footer-top">
-<a class="brand" href="{rel}" aria-label="Superiso Studio, back to top"><img src="{rel}assets/logo.png" alt="" width="25" height="31">superiso studio</a>
+<a class="brand" href="{rel or '#top'}" aria-label="{'Superiso Studio, back to top' if not rel else 'Superiso Studio home'}"><img src="{rel}assets/logo.png" alt="" width="25" height="31">superiso studio</a>
 <div class="footer-links">
 <a href="{rel}work/">Work</a>
 <a href="{rel}studio/">Studio</a>
