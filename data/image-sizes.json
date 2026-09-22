@@ -1,0 +1,692 @@
+{
+ "resort-living/03.jpg": {
+  "w": 1537,
+  "h": 1660,
+  "widths": [
+   800,
+   1400,
+   1537
+  ],
+  "ratio": 0.9259
+ },
+ "resort-living/04.jpg": {
+  "w": 1537,
+  "h": 1165,
+  "widths": [
+   800,
+   1400,
+   1537
+  ],
+  "ratio": 1.3193
+ },
+ "resort-living/05.jpg": {
+  "w": 1600,
+  "h": 955,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.6754
+ },
+ "resort-living/02.jpg": {
+  "w": 1600,
+  "h": 858,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.8648
+ },
+ "resort-living/18.jpg": {
+  "w": 1024,
+  "h": 600,
+  "widths": [
+   800,
+   1024
+  ],
+  "ratio": 1.7067
+ },
+ "resort-living/10.jpg": {
+  "w": 1536,
+  "h": 2048,
+  "widths": [
+   800,
+   1400,
+   1536
+  ],
+  "ratio": 0.75
+ },
+ "resort-living/09.jpg": {
+  "w": 1535,
+  "h": 2048,
+  "widths": [
+   800,
+   1400,
+   1535
+  ],
+  "ratio": 0.7495
+ },
+ "resort-living/11.jpg": {
+  "w": 1537,
+  "h": 2049,
+  "widths": [
+   800,
+   1400,
+   1537
+  ],
+  "ratio": 0.7501
+ },
+ "resort-living/07.jpg": {
+  "w": 1421,
+  "h": 2048,
+  "widths": [
+   800,
+   1400,
+   1421
+  ],
+  "ratio": 0.6938
+ },
+ "resort-living/06.jpg": {
+  "w": 1417,
+  "h": 2048,
+  "widths": [
+   800,
+   1400,
+   1417
+  ],
+  "ratio": 0.6919
+ },
+ "resort-living/19.jpg": {
+  "w": 1536,
+  "h": 2049,
+  "widths": [
+   800,
+   1400,
+   1536
+  ],
+  "ratio": 0.7496
+ },
+ "resort-living/08.jpg": {
+  "w": 1417,
+  "h": 2048,
+  "widths": [
+   800,
+   1400,
+   1417
+  ],
+  "ratio": 0.6919
+ },
+ "resort-living/15.jpg": {
+  "w": 1411,
+  "h": 1923,
+  "widths": [
+   800,
+   1400,
+   1411
+  ],
+  "ratio": 0.7337
+ },
+ "resort-living/20.jpg": {
+  "w": 1536,
+  "h": 2037,
+  "widths": [
+   800,
+   1400,
+   1536
+  ],
+  "ratio": 0.7541
+ },
+ "resort-living/16.jpg": {
+  "w": 1419,
+  "h": 1950,
+  "widths": [
+   800,
+   1400,
+   1419
+  ],
+  "ratio": 0.7277
+ },
+ "resort-living/14.jpg": {
+  "w": 1206,
+  "h": 1658,
+  "widths": [
+   800,
+   1206
+  ],
+  "ratio": 0.7274
+ },
+ "resort-living/17.jpg": {
+  "w": 876,
+  "h": 1205,
+  "widths": [
+   800,
+   876
+  ],
+  "ratio": 0.727
+ },
+ "resort-living/13.jpg": {
+  "w": 1113,
+  "h": 1485,
+  "widths": [
+   800,
+   1113
+  ],
+  "ratio": 0.7495
+ },
+ "resort-living/12.jpg": {
+  "w": 1535,
+  "h": 2048,
+  "widths": [
+   800,
+   1400,
+   1535
+  ],
+  "ratio": 0.7495
+ },
+ "childhood-memories/05.jpg": {
+  "w": 1600,
+  "h": 2004,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.7984
+ },
+ "childhood-memories/06.jpg": {
+  "w": 1600,
+  "h": 2004,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.7984
+ },
+ "childhood-memories/03.jpg": {
+  "w": 1600,
+  "h": 1865,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.8579
+ },
+ "childhood-memories/04.jpg": {
+  "w": 1580,
+  "h": 1842,
+  "widths": [
+   800,
+   1400,
+   1580
+  ],
+  "ratio": 0.8578
+ },
+ "childhood-memories/02.jpg": {
+  "w": 1600,
+  "h": 1865,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.8579
+ },
+ "childhood-memories/12.jpg": {
+  "w": 1600,
+  "h": 1959,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.8167
+ },
+ "childhood-memories/13.jpg": {
+  "w": 1600,
+  "h": 1960,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.8163
+ },
+ "childhood-memories/08.jpg": {
+  "w": 1600,
+  "h": 1043,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.534
+ },
+ "childhood-memories/07.jpg": {
+  "w": 1600,
+  "h": 1162,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.3769
+ },
+ "childhood-memories/11.jpg": {
+  "w": 1600,
+  "h": 2319,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.69
+ },
+ "childhood-memories/09.jpg": {
+  "w": 1600,
+  "h": 1161,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.3781
+ },
+ "childhood-memories/10.jpg": {
+  "w": 1600,
+  "h": 1048,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.5267
+ },
+ "k-m-apartment/03.jpg": {
+  "w": 1600,
+  "h": 2133,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.7501
+ },
+ "k-m-apartment/04.jpg": {
+  "w": 1600,
+  "h": 2135,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.7494
+ },
+ "k-m-apartment/05.jpg": {
+  "w": 1192,
+  "h": 1735,
+  "widths": [
+   800,
+   1192
+  ],
+  "ratio": 0.687
+ },
+ "k-m-apartment/09.jpg": {
+  "w": 1600,
+  "h": 2133,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.7501
+ },
+ "k-m-apartment/10.jpg": {
+  "w": 1532,
+  "h": 2048,
+  "widths": [
+   800,
+   1400,
+   1532
+  ],
+  "ratio": 0.748
+ },
+ "k-m-apartment/02.jpg": {
+  "w": 1600,
+  "h": 863,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.854
+ },
+ "k-m-apartment/06.jpg": {
+  "w": 1600,
+  "h": 2133,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.7501
+ },
+ "k-m-apartment/07.jpg": {
+  "w": 1428,
+  "h": 2048,
+  "widths": [
+   800,
+   1400,
+   1428
+  ],
+  "ratio": 0.6973
+ },
+ "k-m-apartment/15.jpg": {
+  "w": 1600,
+  "h": 1446,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.1065
+ },
+ "k-m-apartment/11.jpg": {
+  "w": 1600,
+  "h": 2212,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.7233
+ },
+ "k-m-apartment/13.jpg": {
+  "w": 1600,
+  "h": 2212,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.7233
+ },
+ "k-m-apartment/14.jpg": {
+  "w": 1042,
+  "h": 1440,
+  "widths": [
+   800,
+   1042
+  ],
+  "ratio": 0.7236
+ },
+ "k-m-apartment/08.jpg": {
+  "w": 1600,
+  "h": 2106,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.7597
+ },
+ "terrace-apartment/03.jpg": {
+  "w": 1600,
+  "h": 1453,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.1012
+ },
+ "terrace-apartment/06.jpg": {
+  "w": 1600,
+  "h": 1973,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.8109
+ },
+ "terrace-apartment/04.jpg": {
+  "w": 1600,
+  "h": 2104,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.7605
+ },
+ "terrace-apartment/02.jpg": {
+  "w": 1600,
+  "h": 936,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.7094
+ },
+ "terrace-apartment/07.jpg": {
+  "w": 1600,
+  "h": 1973,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.8109
+ },
+ "terrace-apartment/05.jpg": {
+  "w": 1600,
+  "h": 2416,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.6623
+ },
+ "chefs-fillet/02.jpg": {
+  "w": 1600,
+  "h": 656,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 2.439
+ },
+ "chefs-fillet/07.jpg": {
+  "w": 1600,
+  "h": 926,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.7279
+ },
+ "chefs-fillet/03.jpg": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.7778
+ },
+ "chefs-fillet/04.jpg": {
+  "w": 1600,
+  "h": 895,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.7877
+ },
+ "chefs-fillet/05.jpg": {
+  "w": 1600,
+  "h": 898,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.7817
+ },
+ "chefs-fillet/06.jpg": {
+  "w": 1600,
+  "h": 900,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.7778
+ },
+ "house-on-house/03.jpg": {
+  "w": 582,
+  "h": 937,
+  "widths": [
+   582
+  ],
+  "ratio": 0.6211
+ },
+ "house-on-house/04.jpg": {
+  "w": 585,
+  "h": 943,
+  "widths": [
+   585
+  ],
+  "ratio": 0.6204
+ },
+ "house-on-house/02.jpg": {
+  "w": 1600,
+  "h": 1130,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.4159
+ },
+ "courtyard-house/02.jpg": {
+  "w": 1600,
+  "h": 905,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.768
+ },
+ "courtyard-house/08.jpg": {
+  "w": 1600,
+  "h": 1316,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.2158
+ },
+ "courtyard-house/03.jpg": {
+  "w": 1600,
+  "h": 1638,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 0.9768
+ },
+ "courtyard-house/04.jpg": {
+  "w": 1600,
+  "h": 800,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 2.0
+ },
+ "courtyard-house/09.jpg": {
+  "w": 1600,
+  "h": 813,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.968
+ },
+ "courtyard-house/07.jpg": {
+  "w": 1443,
+  "h": 810,
+  "widths": [
+   800,
+   1400,
+   1443
+  ],
+  "ratio": 1.7815
+ },
+ "courtyard-house/05.jpg": {
+  "w": 1591,
+  "h": 761,
+  "widths": [
+   800,
+   1400,
+   1591
+  ],
+  "ratio": 2.0907
+ },
+ "courtyard-house/06.jpg": {
+  "w": 1600,
+  "h": 902,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.7738
+ },
+ "secret-garden/02.jpg": {
+  "w": 1600,
+  "h": 741,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 2.1592
+ },
+ "secret-garden/03.jpg": {
+  "w": 1600,
+  "h": 815,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.9632
+ },
+ "secret-garden/04.jpg": {
+  "w": 1600,
+  "h": 1166,
+  "widths": [
+   800,
+   1400,
+   1600
+  ],
+  "ratio": 1.3722
+ }
+}

@@ -1,0 +1,624 @@
+{
+  "site": {
+    "name": "Superiso Studio",
+    "tagline": "Spaces shaped by stories",
+    "city": "Singapore",
+    "email": "projects@superisostudio.com",
+    "instagram": "https://www.instagram.com/superiso_studio/",
+    "instagramHandle": "@superiso_studio",
+    "description": "Superiso Studio is an architecture and interior design practice in Singapore, shaping homes around the lives and stories they hold.",
+    "quote": {
+      "text": "Every great design begins with an even better story",
+      "author": "Lorinda Mamo"
+    },
+    "principles": [
+      {
+        "title": "Design together",
+        "body": "We collaborate with the people we design for, and with the makers who build it. A better result comes from more voices, not fewer."
+      },
+      {
+        "title": "Make room for play",
+        "body": "A home should hold emotion as well as function. We look for the moments of delight, surprise and warmth that make a space feel lived in."
+      },
+      {
+        "title": "Tread lightly",
+        "body": "Sustainable design should be ordinary, not exceptional. We work with what is already there and choose materials that will last."
+      }
+    ],
+    "process": [
+      {
+        "num": "01",
+        "title": "Concept",
+        "body": "It begins with listening. Your routines, your aspirations and the character of the place become the starting point for everything that follows."
+      },
+      {
+        "num": "02",
+        "title": "Designing",
+        "body": "Ideas take shape through light, proportion and material. We explore the possibilities together, from the larger plan down to the smallest joint."
+      },
+      {
+        "num": "03",
+        "title": "Executing",
+        "body": "Thought becomes space. The design is carried through on site with care, keeping the original story at the heart of the finished place."
+      }
+    ],
+    "baseUrl": "https://mingkey88.github.io/superiso-homepage",
+    "indexable": false
+  },
+  "projects": [
+    {
+      "slug": "resort-living",
+      "title": "Resort Living",
+      "location": "East Coast",
+      "area": "250 m²",
+      "typology": "Landed residential",
+      "scope": [
+        "Architectural",
+        "Interior"
+      ],
+      "status": "Completed",
+      "featured": true,
+      "summary": "A simple East Coast house for a couple, reimagined as an everyday retreat.",
+      "body": [
+        "The brief was deceptively simple: turn an ordinary landed house into somewhere that feels like arriving on holiday. Not a themed resort, but the particular calm of a place where the outside is always close by.",
+        "An arched pavilion opens the living spaces directly onto the pool and garden, so the boundary between inside and out is barely drawn. Timber, stone and planting carry through the house, and a frangipani tree anchors the terrace it was built around."
+      ],
+      "images": [
+        {
+          "file": "03.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Timber steps rising to an arched terrace, framed by a flowering frangipani tree"
+        },
+        {
+          "file": "04.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "The garden pool and lawn seen from the shaded terrace, with timber lounge chairs"
+        },
+        {
+          "file": "05.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "The arched living room opening directly onto the pool terrace"
+        },
+        {
+          "file": "02.jpg",
+          "type": "drawing",
+          "span": "normal",
+          "alt": "Cutaway axonometric drawing showing the arched living pavilion and garden"
+        },
+        {
+          "file": "18.jpg",
+          "type": "drawing",
+          "span": "normal",
+          "alt": "Annotated axonometric drawing of the Resort Living renovation"
+        },
+        {
+          "file": "10.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Dining table and pendant lights on marble flooring, with the staircase beyond"
+        },
+        {
+          "file": "09.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Open timber kitchen shelving and integrated appliances"
+        },
+        {
+          "file": "11.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Timber stair treads and a glass balustrade rising through the house"
+        },
+        {
+          "file": "07.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Main bedroom beneath exposed black roof beams and a timber ceiling fan"
+        },
+        {
+          "file": "06.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "A built-in window seat with timber blinds, overlooking the garden"
+        },
+        {
+          "file": "19.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Bedroom with parquet flooring opening onto the garden"
+        },
+        {
+          "file": "08.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "A mirrored wardrobe corridor above herringbone parquet"
+        },
+        {
+          "file": "15.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "A mustard lounge chair in the loft beneath white-painted roof trusses"
+        },
+        {
+          "file": "20.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Freestanding bath and black-framed shower screen in the main bathroom"
+        },
+        {
+          "file": "16.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Round mirror and stone vanity in the family bathroom"
+        },
+        {
+          "file": "14.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Close detail of the joined timber ceiling and wall lining"
+        },
+        {
+          "file": "17.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Detail of the fluted timber batten screen"
+        },
+        {
+          "file": "13.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "A spiral stair descending into the planted side courtyard"
+        },
+        {
+          "file": "12.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Flowering garden framed by a bamboo blind"
+        }
+      ]
+    },
+    {
+      "slug": "childhood-memories",
+      "title": "Childhood Memories",
+      "location": "East Coast",
+      "area": "310 m²",
+      "typology": "Landed residential",
+      "scope": [
+        "Architectural",
+        "Interior"
+      ],
+      "status": "Completed",
+      "featured": true,
+      "summary": "A family of four moving back into the home one of them grew up in.",
+      "body": [
+        "Returning to a childhood home is a particular kind of brief. The house already holds a story; the work is to make room for the next one without erasing what came before.",
+        "The original roof structure was opened up and left exposed, giving the upper floor height and light it never had. Below, a calm palette of timber, stone and off-white lets the family's own life supply the colour."
+      ],
+      "images": [
+        {
+          "file": "05.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Black roof trusses exposed above a timber floor in the opened-up upper storey"
+        },
+        {
+          "file": "06.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Stair balustrade and timber flooring beside full-height glazing"
+        },
+        {
+          "file": "03.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Kitchen with a timber island, integrated appliances and garden glazing"
+        },
+        {
+          "file": "04.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Dark stone feature wall with a pendant light and timber drawers"
+        },
+        {
+          "file": "02.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Timber-slatted feature wall above a built-in bench on marble flooring"
+        },
+        {
+          "file": "12.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "White staircase turning through the double-height stairwell"
+        },
+        {
+          "file": "13.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Full-height white wardrobes above herringbone parquet"
+        },
+        {
+          "file": "08.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Detail of the timber handrail meeting the black steel balustrade"
+        },
+        {
+          "file": "07.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Timber batten screen meeting a flush cabinet face"
+        },
+        {
+          "file": "11.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Timber cabinetry above a dark stone splashback, lit from beneath"
+        },
+        {
+          "file": "09.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Close detail of a timber cabinet edge and stone worktop"
+        },
+        {
+          "file": "10.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Joinery detail showing the concealed hinge and timber carcass"
+        }
+      ]
+    },
+    {
+      "slug": "k-m-apartment",
+      "title": "K+M Apartment",
+      "location": "Novena",
+      "area": "130 m²",
+      "typology": "3-bedroom condominium",
+      "scope": [
+        "Interior"
+      ],
+      "status": "Completed",
+      "featured": false,
+      "summary": "A first home for a couple of dentists, made for unwinding at the end of long days.",
+      "body": [
+        "Two demanding careers, and a home that needed to do the opposite of a clinic. The apartment is warm where their working days are clinical, and quiet where they are busy.",
+        "Fluted timber screens filter the entrance and living areas, giving the plan a sense of depth without closing it down. Storage is absorbed into the walls, so the rooms stay clear and the eye can rest."
+      ],
+      "images": [
+        {
+          "file": "03.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Living room with a timber media console and curtained balcony beyond"
+        },
+        {
+          "file": "04.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Fluted timber screen beside a lit display shelf and drinks cabinet"
+        },
+        {
+          "file": "05.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Entrance hall with a timber slat screen and a built-in shoe bench"
+        },
+        {
+          "file": "09.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Galley kitchen in pale timber and stone with a stainless splashback"
+        },
+        {
+          "file": "10.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "A resident making coffee at the lit timber breakfast niche"
+        },
+        {
+          "file": "02.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "View from the living area through to the dining table"
+        },
+        {
+          "file": "06.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Timber shelf and kettle above the stone kitchen worktop"
+        },
+        {
+          "file": "07.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Textured plaster wall beside the timber entrance door"
+        },
+        {
+          "file": "15.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Main bedroom with an upholstered headboard and concealed lighting"
+        },
+        {
+          "file": "11.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Bedside niche in timber with planting and a lit shelf"
+        },
+        {
+          "file": "13.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Mirrored cabinet opening above the timber vanity"
+        },
+        {
+          "file": "14.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Timber open shelving beside the bathroom vanity"
+        },
+        {
+          "file": "08.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Detail of the fluted and flat timber cabinet faces"
+        }
+      ]
+    },
+    {
+      "slug": "terrace-apartment",
+      "title": "Terrace Apartment",
+      "location": "Stevens",
+      "area": "250 m²",
+      "typology": "3-bedroom condominium with roof terrace",
+      "scope": [
+        "Interior"
+      ],
+      "status": "Completed",
+      "featured": false,
+      "summary": "An apartment for a family who cook, and who like a full table.",
+      "body": [
+        "The roof terrace was the reason for the whole project. It had the space for a proper outdoor kitchen, and a family who would actually use it several times a week.",
+        "Indoors, the plan was rebalanced around gathering: a generous dining table at the centre, and storage that keeps the everyday clutter of a busy household out of sight."
+      ],
+      "images": [
+        {
+          "file": "03.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Roof terrace outdoor kitchen with a blue tiled splashback and a long dining table"
+        },
+        {
+          "file": "06.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Timber dining table set for six beside the galley kitchen"
+        },
+        {
+          "file": "04.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "The dining room framed through a wide plastered opening"
+        },
+        {
+          "file": "02.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Living room with curtained windows and a built-in timber console"
+        },
+        {
+          "file": "07.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Bedroom with a timber window seat and louvred blinds"
+        },
+        {
+          "file": "05.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Built-in dressing counter running beneath the bedroom window"
+        }
+      ]
+    },
+    {
+      "slug": "chefs-fillet",
+      "title": "Chef's Fillet",
+      "location": "Punggol",
+      "area": "92 m²",
+      "typology": "4-room HDB",
+      "scope": [
+        "Interior"
+      ],
+      "status": "In progress",
+      "featured": false,
+      "summary": "One bold gesture, threading the common spaces of a four-room flat together.",
+      "body": [
+        "A four-room flat gives you a fixed envelope and a limited budget. The opportunity is in deciding where to spend both.",
+        "Here it goes into a single continuous move that links entrance, kitchen, dining and living into one legible space. Everything else stays quiet and pale, so the gesture does the work."
+      ],
+      "images": [
+        {
+          "file": "02.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Visualisation of the open living and dining space with a wall-mounted artwork"
+        },
+        {
+          "file": "07.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Visualisation looking along the kitchen towards the living area"
+        },
+        {
+          "file": "03.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Visualisation of the galley kitchen in pale cabinetry and stone"
+        },
+        {
+          "file": "04.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Visualisation of the study corner beside the bedroom window"
+        },
+        {
+          "file": "05.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Visualisation of the bedroom with full-height wardrobes"
+        },
+        {
+          "file": "06.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Visualisation of the bathroom with an arched mirror and walk-in shower"
+        }
+      ]
+    },
+    {
+      "slug": "house-on-house",
+      "title": "House on House",
+      "location": "Macpherson",
+      "area": "260 m²",
+      "typology": "Landed residential",
+      "scope": [
+        "Architectural"
+      ],
+      "status": "In progress",
+      "featured": false,
+      "summary": "A new home built on top of an existing two-storey terrace, making room for a family to grow.",
+      "body": [
+        "Rather than start again, the project adds. A new storey is built over the existing two-storey terrace, giving the owners the space they need without giving up the house they already have.",
+        "The addition is read as its own volume, set back and lighter than the masonry below, with a planted terrace in between. The result is a house that shows its two chapters rather than hiding the join."
+      ],
+      "images": [
+        {
+          "file": "03.jpg",
+          "type": "drawing",
+          "span": "normal",
+          "alt": "Front elevation drawing showing the new upper storey set above the existing terrace"
+        },
+        {
+          "file": "04.jpg",
+          "type": "drawing",
+          "span": "normal",
+          "alt": "Side elevation drawing of the extended house"
+        },
+        {
+          "file": "02.jpg",
+          "type": "drawing",
+          "span": "wide",
+          "alt": "Exploded axonometric drawing separating the new storey from the existing house"
+        }
+      ]
+    },
+    {
+      "slug": "courtyard-house",
+      "title": "Courtyard House",
+      "location": "Lentor",
+      "area": "460 m²",
+      "typology": "Landed residential",
+      "scope": [
+        "Architectural"
+      ],
+      "status": "Concept proposal",
+      "featured": false,
+      "summary": "A corner terrace reworked around a courtyard for a family of four.",
+      "body": [
+        "Corner plots give you something most terraces never have: a second face to the street, and the light that comes with it.",
+        "The proposal turns the house inward around a courtyard, so that rooms borrow light and air from the middle of the plan rather than competing for the perimeter. A pitched roof carries the form back to its neighbours."
+      ],
+      "images": [
+        {
+          "file": "02.jpg",
+          "type": "drawing",
+          "span": "wide",
+          "alt": "Exterior visualisation of the proposed corner house with a pitched roof"
+        },
+        {
+          "file": "08.jpg",
+          "type": "drawing",
+          "span": "normal",
+          "alt": "Visualisation of the house seen from the side street"
+        },
+        {
+          "file": "03.jpg",
+          "type": "drawing",
+          "span": "normal",
+          "alt": "Front elevation study of the proposed house"
+        },
+        {
+          "file": "04.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Interior visualisation of the kitchen island looking towards the dining area"
+        },
+        {
+          "file": "09.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Interior visualisation along the living space towards the staircase"
+        },
+        {
+          "file": "07.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Visualisation of the kitchen and dining area from the courtyard side"
+        },
+        {
+          "file": "05.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Visualisation of the study beneath the staircase"
+        },
+        {
+          "file": "06.jpg",
+          "type": "photo",
+          "span": "normal",
+          "alt": "Visualisation of the planted internal courtyard"
+        }
+      ]
+    },
+    {
+      "slug": "secret-garden",
+      "title": "Secret Garden",
+      "location": "Novena",
+      "area": "3,420 m²",
+      "typology": "Mixed-use, commercial and residential",
+      "scope": [
+        "Architectural"
+      ],
+      "status": "Concept proposal",
+      "featured": false,
+      "summary": "A mixed-use proposal that gives its ground floor back to the street as public garden.",
+      "body": [
+        "The studio's largest proposal to date, and the one that tests its ideas at civic scale. Apartments sit above a commercial ground floor on a busy Novena corner.",
+        "The move is to hollow out the base. A planted garden is carved through the ground plane and left open to the street, so the building gives something back to the neighbourhood it sits in."
+      ],
+      "images": [
+        {
+          "file": "02.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Visualisation of the mixed-use building seen across open lawn"
+        },
+        {
+          "file": "03.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Street-corner visualisation showing the commercial frontage and apartments above"
+        },
+        {
+          "file": "04.jpg",
+          "type": "photo",
+          "span": "wide",
+          "alt": "Visualisation of the planted public garden carved into the ground floor"
+        }
+      ]
+    }
+  ]
+}
